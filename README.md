@@ -14,39 +14,69 @@ Comments in Python are marked by a # sign (for single-line comments) or three ma
 Edit README.md to answer the following questions:
 
 - Open main01.py. Before running it, what do you expect this program to do?
+
+I expect it to print "Greetings," then print "What is my favorite color?," then require the user to input a response to the latter before the program completes.
   - Now right click on the main1.py window and select “Run Python File in Terminal”. Click in the bottom panel, and answer the question. Describe what happened.
+  It printed "Greetings," then printed "What is my favorite color?," then required me to input a response to the latter before the program completed.
   - What do you think the program did with what you typed in answer to the question?
+  Nothing- it didn't store it to any variable nor use it for any function.
 - Open main02.py. Before running it, describe how this is different than main01.py.
+It stores the user input in the variable "color" then prints it.
   - What do you think the color = input() will do?
+  It will store the response I input to the question, and then print it with the following method.
   - Run the program in the terminal and answer the question. Did the program do what you expected?
+  Yes
 - Open main03.py. Before running it, describe how this is different than main02.py.
+Instead of parroting the user's response, it has an if/else tree to determine what it prints based on the input.
   - What is happening on lines 9–12?
+  If the user's input is exactly "Red," it will tell the user "Correct!" if not, it will tell them "Sorry, try again" (bt not make them actually try again)
   - Why are lines 10 and 12 indented?
+  Because they are part of the if statement, and indenting them is useful for standardization and clarity
   - Run the program and answer the question. What happens if you don’t capitalize Red?
+  It prints "Sorry, try again"
   - What does this tell you about "color"?
+  String matching in Python is case sensitive, and "color" is a string.
 - Open main04.py. Before running it, describe how this is different than main03.py.
+It prints "Correct!" on "red" as well as "Red"
   - What problem is this trying to solve?
+  It is trying to solve the unintuitive capitalization requirement from the previous guessing game.
   - Run the program and answer the question. What happens if you use some other capitalization scheme (i.e., “RED” or “reD“)?
+  It prints "Sorry, try again"
 - Open main05.py. What do you expect line 9 to do?
   - What problem is it trying to solve?
+  The unintuitive capitalization requirement from the previous guessing games
   - Run the program and answer the question. What happens if you add spaces before or after the word (i.e., “ RED “ or “ red”)?
+  It says "Sorry, try again"
  - Open main06.py. How is line 9 different than in main05.py?
    - What would you guess .strip() is doing?
+   Stripping spaces from the string
    - Run the program and answer the question. Is there another way of writing “red” that will break this logic?
+   Adding punctuation to your answer; i.e. "Red!"
  - Open main07.py. Before running this program, how do you expect this to be different than main06.py?
+ If the user answers "pink," they will receive a different answer. In addition, the variable "color" will be stored in the lowercase stripped form
    - What is happening on line 12?
+   Else (when the stripped color isn't "red") if (the stripped color is "pink") the program will print "Close!"
    - Run the program and answer the question.
  - Open main08.py. What is the purpose of line 9?
+ The purose 
    - Why are lines 10–17 indented?
    - Run the program. What would happen if line 10 were moved before line 9 (and no longer indented)?
+   If the user's input stripped to "red," it would do nothing instead. If the user's input stripped to anything else, it would run an infinite loop printing the appropriate response ("close" for pink, "Sorry try again" for anything else)
    - Make that change and run the program again. (To end any Python program, you can type ctrl-c)
  - Open main09.py. What is happening on line 13?
    - What is the purpose of “count”?
+   The purpose of count is to track the number of attempts the user makes to guess the correct color.
    - What is happening on line 22?
+   There is no line 22 so I'm answering this for line 21
+
+   The program prints "You guessed it in x tries!" where x is the variable "count," which has become equal to the number of attempts the user has made.
    - Run the program.
  - *Extra credit:* open main10.py. Add a comment to each line describing what it is doing (a comment follows a pound sign [#]).
+
+ Done
+
  - *Extra credit:* open main11.py. What is happening on lines 6-11?
-  
+  The program is defining a function called "choose_color" for later use. Given an input parameter of "last_color," it picks a random color, then picks again if that color was the same as "last_color." Once it picks a new color, it returns that color to the original function caller.
 Commit your changes and push them back to the repository.
  
 
