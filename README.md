@@ -25,7 +25,7 @@ Edit README.md to answer the following questions:
   - What do you think the color = input() will do?
   #It will store the response I input to the question, and then print it with the following method.
   - Run the program in the terminal and answer the question. Did the program do what you expected?
- # Yes
+ #Yes
 - Open main03.py. Before running it, describe how this is different than main02.py.
 #Instead of parroting the user's response, it has an if/else tree to determine what it prints based on the input.
   - What is happening on lines 9–12?
@@ -33,29 +33,29 @@ Edit README.md to answer the following questions:
   - Why are lines 10 and 12 indented?
   #Because they are part of the if statement, and indenting them is useful for standardization and clarity
   - Run the program and answer the question. What happens if you don’t capitalize Red?
- # It prints "Sorry, try again"
+ #It prints "Sorry, try again"
   - What does this tell you about "color"?
   ##String matching in Python is case sensitive, and "color" is a string.
 - Open main04.py. Before running it, describe how this is different than main03.py.
 #It prints "Correct!" on "red" as well as "Red"
   - What problem is this trying to solve?
- # It is trying to solve the unintuitive capitalization requirement from the previous guessing game.
+ #It is trying to solve the unintuitive capitalization requirement from the previous guessing game.
   - Run the program and answer the question. What happens if you use some other capitalization scheme (i.e., “RED” or “reD“)?
- # It prints "Sorry, try again"
+ #It prints "Sorry, try again"
 - Open main05.py. What do you expect line 9 to do?
   - What problem is it trying to solve?
- # The unintuitive capitalization requirement from the previous guessing games
+ #The unintuitive capitalization requirement from the previous guessing games
   - Run the program and answer the question. What happens if you add spaces before or after the word (i.e., “ RED “ or “ red”)?
   #It says "Sorry, try again"
  - Open main06.py. How is line 9 different than in main05.py?
    - What would you guess .strip() is doing?
-  # Stripping spaces from the string
+  #Stripping spaces from the string
    - Run the program and answer the question. Is there another way of writing “red” that will break this logic?
-  # Adding punctuation to your answer; i.e. "Red!"
+  #Adding punctuation to your answer; i.e. "Red!"
  - Open main07.py. Before running this program, how do you expect this to be different than main06.py?
  #If the user answers "pink," they will receive a different answer. In addition, the variable "color" will be stored in the lowercase stripped form
    - What is happening on line 12?
- #  Else (when the stripped color isn't "red") if (the stripped color is "pink") the program will print "Close!"
+ #Else (when the stripped color isn't "red") if (the stripped color is "pink") the program will print "Close!"
    - Run the program and answer the question.
  - Open main08.py. What is the purpose of line 9?
  #The purpose of line 9 is to set the variable "color" to the user's input guess.
